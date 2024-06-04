@@ -1,0 +1,543 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: #000;
+    color: white;
+    
+}
+header.sticky{
+    background: #034fa6;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+nav .logo img{
+    height: 3em;
+    width: 3em;
+}
+nav .logo h5{
+    font-size: 1.5em;
+}
+nav .logo span{
+    font-size: 2em;
+    color: yellow;
+}
+nav .links{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+nav .links a{
+    color: white;
+    text-decoration: none !important;
+}
+nav .cart{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+nav .cart img{
+    height: 1.8em;
+    width: 1.7em;
+}
+nav .cart .reservation{
+    height: 2.5em;
+    width: 8em;
+    font: bolder;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.hero{
+    background-image: url(./imgs/pexels-jonathanborba-2983101.jpg);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 140px;
+}
+.hero.active{
+    background-image: url(./imgs/pexels-edwardeyer-1049626.jpg);
+}
+.hero .title{
+    width: 40vw;
+    font-size: 1.3em;
+    background: #00000076;
+    padding: 30px;
+}
+.hero .title .change{
+    height: 2em;
+    width: 9em;
+    background: yellow;
+    color: red;
+    font-size: 0.9em;
+    font: bold;
+    border: none;
+    margin-bottom: 20px;
+}
+.hero .title span{
+    font-size: 2em;
+    color: red;
+}
+.hero .title .p{
+    font-size: 0.9em;
+}
+.hero .title .ordernow{
+    height: 2.5em;
+    width: 8em;
+    font: bolder;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+}
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+}
+.section2 .pizza{
+    width: 500px;
+    height: 25em;
+    background-image: url(./imgs/pexels-lum3n-44775-568370.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    border-radius: 5px;
+    padding: 50px;
+    /* font-size: 1.5em; */
+}
+.section2 .pizza span{
+    font-size: 2em;
+}
+.section2 .pizza span .na{
+    font-size: 2.1em;
+    color: yellow;
+}
+.section2 .grid{
+    width: 500px;
+    height: 25em;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section2 .grid .frenches{
+    height: 45%;
+    width: 100%;
+    background-image: url(./imgs/pexels-sheenawood-574111.jpg);
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+    font-size: 1.5em;
+}
+.section2 .grid .frenches span{
+    color: rgb(36, 255, 2);
+    font-size:1.6em ;
+}
+.section2 .grid .ice-cream{
+    height: 45%;
+    width: 100%;
+    background-image: url(./imgs/pexels-valeriya-1199960.jpg);
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+    font-size: 1.5em;
+}
+.section2 .grid .ice-cream span{
+    color: rgb(255, 2, 2);
+    font-size:1.6em ;
+}
+.section3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.section3 .enjoy{
+    width: 50vw;
+    text-align: center;
+    gap: 30px;
+    border-bottom-style: dashed;
+    padding-bottom: 20px;
+}
+.section3 .enjoy .change-food{
+    height: 2em;
+    width: 10em;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: yellowgreen;
+    font-size: 0.9em;
+    font-weight: bolder;
+}
+.section3 .enjoy .c {
+    font-size: 2em;
+    font-weight: bolder;
+    color: red;
+}
+.section3 .enjoy .e {
+    font-size: 2em;
+    font-weight: bolder;
+    color: rgb(0, 222, 41);
+}
+.section3 .foodslogo {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    gap: 20px;
+    margin-bottom: 40px;
+    
+}
+.section3 .foodslogo img{
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+}
+.section3 .main1{
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section3 .main1 .f1{
+    width: 20em;
+    text-align: center;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+}
+.section3 .main1 .f1 .imgs{
+    width: 80%;
+    /* height: 10em; */
+}
+.section3 .main1 .f1 .imgs img{
+    height: 80%;
+    width: 100%;
+}
+
+.section3 .main1 .f1 .imgs{
+    width: 80%;
+    /* height: 10em; */
+}
+.section3 .main1 .f1 .imgs img{
+    height: 80%;
+    width: 100%;
+}
+
+.section3 .main1 .f1 .imgs{
+    width: 80%;
+    /* height: 10em; */
+}
+.section3 .main1 .f1 .imgs img{
+    height: 80%;
+    width: 100%;
+}
+.section3 .hide1{
+    display: none;
+}
+   /* Main 2 Work */
+   .section3 .main2{
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section3 .main2 .p1{
+    width: 20em;
+    text-align: center;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+}
+.section3 .main2 .p1 .imgs{
+    width: 80%;
+    /* height: 10em; */
+}
+.section3 .main2 .p1 .imgs img{
+    height: 80%;
+    width: 100%;
+}
+
+.section3 .main2 .p1 .imgs{
+    width: 80%;
+    /* height: 10em; */
+}
+.section3 .main2 .p1 .imgs img{
+    height: 80%;
+    width: 100%;
+}
+
+.section3 .main2 .p1 .imgs{
+    width: 80%;
+    /* height: 10em; */
+}
+.section3 .main2 .p1 .imgs img{
+    height: 80%;
+    width: 100%;
+}
+
+.section3 .hide2{
+    display: none;
+}
+/* Main 3 Work */
+
+.section3 .main3{
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section3 .main3 .i1{
+    width: 20em;
+    text-align: center;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+}
+.section3 .main3 .i1 .imgs{
+    width: 80%;
+    /* height: 10em; */
+}
+.section3 .main3 .i1 .imgs img{
+    height: 80%;
+    width: 100%;
+}
+
+.section3 .main3 .i1 .imgs{
+    width: 80%;
+    /* height: 10em; */
+}
+.section3 .main3 .i1 .imgs img{
+    height: 80%;
+    width: 100%;
+}
+
+.section3 .main3 .i1 .imgs{
+    width: 70%;
+    /* height: 10em; */
+    margin-bottom: 10px;
+}
+.section3 .main3 .i1 .imgs img{
+    height: 60%;
+    width: 100%;
+}
+/* .section3 .hide3{
+    display: none;
+} */
+
+  /* Main 4 Work */
+
+  .section3 .main4{
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section3 .main4 .d1{
+    width: 20em;
+    text-align: center;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+}
+.section3 .main4 .d1 .imgs{
+    width: 80%;
+    /* height: 10em; */
+}
+.section3 .main4 .d1 .imgs img{
+    height: 80%;
+    width: 100%;
+}
+
+.section3 .main4 .d1 .imgs{
+    width: 80%;
+    /* height: 10em; */
+}
+.section3 .main4 .d1 .imgs img{
+    height: 80%;
+    width: 100%;
+}
+
+.section3 .main4 .d1 .imgs{
+    width: 80%;
+    /* height: 10em; */
+}
+.section3 .main4 .d1 .imgs img{
+    height: 80%;
+    width: 100%;
+}
+.section3 .hide4{
+    display: none;
+}
+
+
+ /* Main 5 Work */
+
+ .section3 .main5{
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section3 .main5 .c2{
+    width: 20em;
+    text-align: center;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+}
+.section3 .main5 .c2 .imgs{
+    width: 80%;
+    /* height: 10em; */
+}
+.section3 .main5 .c2 .imgs img{
+    height: 80%;
+    width: 100%;
+}
+.section3 .main5 .c2 .imgs{
+    width: 80%;
+    /* height: 10em; */
+}
+.section3 .main5 .c2 .imgs img{
+    height: 80%;
+    width: 100%;
+}
+.section3 .main5 .c2 .imgs{
+    width: 80%;
+    /* height: 10em; */
+}
+
+.section3 .main5 .c2 .imgs img{
+    height: 80%;
+    width: 100%;
+}
+.section3 .main5 {
+    display: none;
+}
+.ordernow {
+    height: 3em;
+    width: 10em;
+    background: red;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.ordernow:hover{
+    transform: scale(1.1);
+    background-color: rgba(0, 128, 0, 0.798);
+}
+.footer{
+    /* height: 60vh; */
+    padding-bottom: 100px;
+    background-image: url(./imgs/pexels-viniciusbenedit-1082343.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+.footer .fdiv{
+    width: 40%;
+    margin: 60px;
+    margin-top: 80px;
+    border-top-style:double;
+    border-left-style:double;
+    border-right-style:double;
+    background: #00000058;
+    padding-top: 30px;
+}
+.footer .fdiv .conclusion{
+    padding: 30px;
+}
+.footer .contacts{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background: #00000058;
+    margin-left: 60px;
+    border-bottom-style:double;
+    border-left-style:double;
+    border-right-style:double;
+    padding: 30px;
+}
+.footer .contacts .cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom-style:dashed;
+    padding-bottom: 10px;
+    
+   
+}
+.footer .contacts .copy{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
