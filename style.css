@@ -541,3 +541,39 @@ nav .cart .reservation{
     justify-content: space-around;
     align-items: center;
 }
+.popup{
+    width: 20em;
+    position: fixed;
+    top: 20%;
+    left: 40%;
+   
+    
+}
+.popup div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 2px solid rgb(75, 1, 1);
+    padding: 40px;
+    border-radius: 30px;
+}
+.popup div .bb1{
+    height: 10em;
+    width: 10em;
+}
+.popup div .ok{
+    padding: 10px 60px;
+    font-size: 1.1em;
+    border-radius: 30px;
+    background: green;
+    border: none;
+    color: white;
+    transition: 0.5s;
+}
+.popup div .ok:hover{
+    transform: scale(1.1);
+}

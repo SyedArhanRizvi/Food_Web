@@ -89,6 +89,7 @@ chines.addEventListener("click", () => {
 
 
 // Background Changer :
+let pop = document.querySelector(".popup");
 
 
 let orderNow = document.querySelectorAll(".ordernow");
@@ -100,59 +101,207 @@ orderNow.forEach((btn) => {
 
         let bookingId = "#" + rendomCode;
         if (a === "brgr1" || a === "brgr2" || a === "brgr3") {
-            if(a === "brgr1") {
-                let div = document.createElement("div");
-                div.innerHTML = `
+            if (a === "brgr1") {
+                setTimeout(() => {
+                    let div = document.createElement("div");
+                    div.innerHTML = `
                 <img src='./imgs/b2.png' class="bb1">
+                <p>Congrasulations Your Order is Done</p>
                 <p>${bookingId}</p>
+                <button class="ok">Done</button>
                 `
-                console.log(div);
+                    pop.appendChild(div);
+                    console.log(div);
+                }, 2000)
 
-            } else if(a === "brgr2") {
-                let div = document.createElement("div");
+
+            } else if (a === "brgr2") {
+                setTimeout(()=>{
+                     let div = document.createElement("div");
                 div.innerHTML = `
-                <img src="./imgs/2.jpg" class="bb1">
+                <img src="./imgs/b4.png" class="bb1">
                 <p>${bookingId}</p>
                 `
+                pop.appendChild(div);
                 console.log(div);
+                })
+               
             } else {
-                let div = document.createElement("div");
+                setTimeout(()=>{
+                    let div = document.createElement("div");
                 div.innerHTML = `
-                <img src="./imgs/2.jpg" class="bb1">
+                <img src="./imgs/b5.png" class="bb1">
+                <p>Congrasulations Your Order is Done</p>
                 <p>${bookingId}</p>
+                <button class="ok">Done</button>
                 `
+                pop.appendChild(div);
                 console.log(div);
+                })
+                
             }
         } else if (a === "pizza1" || a === "pizza2" || a === "pizza3") {
-            if(a === "pizza1") {
+            if (a === "pizza1") {
+                setTimeout(() => {
+                    let div = document.createElement("div");
+                    div.innerHTML = `
+                    <img src="./imgs/p1.png" class="bb1">
+                    <p>Congrasulations Your Order is Done</p>
+                    <p>${bookingId}</p>
+                    <button class="ok">Done</button>
+                    `
+                    pop.appendChild(div);
+                    console.log(div);
+                }, 2000);
 
-            } else if(a === "pizza2") {
+            } else if (a === "pizza2") {
+                setTimeout(() => {
+                    let div = document.createElement("div");
+                    div.innerHTML = `
+                    <img src="./imgs/p2.png" class="bb1">
+                    <p>Congrasulations Your Order is Done</p>
+                    <p>${bookingId}</p>
+                    <button class="ok">Done</button>
+                    `
+                    pop.appendChild(div);
+                    console.log(div);
+                }, 2000);
 
             } else {
+                setTimeout(() => {
+                    let div = document.createElement("div");
+                    div.innerHTML = `
+                    <img src="./imgs/p2.png" class="bb1">
+                    <p>Congrasulations Your Order is Done</p>
+                    <p>${bookingId}</p>
+                    <button class="ok">Done</button>
+                    `
+                    pop.appendChild(div);
+                    console.log(div);
+                }, 2000);
 
             }
         } else if (a === "ice1" || a === "ice2" || a === "ice3") {
-            if(a === "ice1") {
+            if (a === "ice1") {
+                setTimeout(() => {
+                    let div = document.createElement("div");
+                    div.innerHTML = `
+                    <img src="./imgs/i2.jpg" class="bb1">
+                    <p>Congrasulations Your Order is Done</p>
+                    <p>${bookingId}</p>
+                    <button class="ok">Done</button>
+                    `
+                    pop.appendChild(div);
+                    console.log(div);
+                }, 2000);
 
-            } else if(a === "ice2") {
+            } else if (a === "ice2") {
+                setTimeout(() => {
+                    let div = document.createElement("div");
+                    div.innerHTML = `
+                    <img src="./imgs/Beautiful-Ice-Cream-Wallpaper-HD-620x422.jpg" class="bb1">
+                    <p>Congrasulations Your Order is Done</p>
+                    <p>${bookingId}</p>
+                    <button class="ok">Done</button>
+                    `
+                    pop.appendChild(div);
+                    console.log(div);
+                }, 2000);
 
             } else {
+                setTimeout(() => {
+                    let div = document.createElement("div");
+                    div.innerHTML = `
+                    <img src="./imgs/i4.jpg" class="bb1">
+                    <p>Congrasulations Your Order is Done</p>
+                    <p>${bookingId}</p>
+                    <button class="ok">Done</button>
+                    `
+                    pop.appendChild(div);
+                    console.log(div);
+                }, 2000);
 
             }
         } else if (a === "cold1" || a === "cold2" || a === "cold3") {
-            if(a === "cold1") {
+            if (a === "cold1") {
+                setTimeout(() => {
+                    let div = document.createElement("div");
+                    div.innerHTML = `
+                    <img src="./imgs/pexels-bluerhinomedia-2789328.jpg" class="bb1">
+                    <p>Congrasulations Your Order is Done</p>
+                    <p>${bookingId}</p>
+                    <button class="ok">Done</button>
+                    `
+                    pop.appendChild(div);
+                    console.log(div);
+                }, 2000);
 
-            } else if(a === "cold2") {
+            } else if (a === "cold2") {
+                setTimeout(() => {
+                    let div = document.createElement("div");
+                    div.innerHTML = `
+                    <img src="./imgs/image.png" class="bb1">
+                    <p>Congrasulations Your Order is Done</p>
+                    <p>${bookingId}</p>
+                    <button class="ok">Done</button>
+                    `
+                    pop.appendChild(div);
+                    console.log(div);
+                }, 2000);
 
             } else {
+                setTimeout(() => {
+                    let div = document.createElement("div");
+                    div.innerHTML = `
+                    <img src="./imgs/pexels-roman-odintsov-4958904.jpg" class="bb1">
+                    <p>Congrasulations Your Order is Done</p>
+                    <p>${bookingId}</p>
+                    <button class="ok">Done</button>
+                    `
+                    pop.appendChild(div);
+                    console.log(div);
+                }, 2000);
 
             }
         } else if (a === "china1" || a === "china2" || a === "china3") {
-            if(a === "china1") {
+            if (a === "china1") {
+                setTimeout(() => {
+                    let div = document.createElement("div");
+                    div.innerHTML = `
+                    <img src="./imgs/2.jpg" class="bb1">
+                    <p>Congrasulations Your Order is Done</p>
+                    <p>${bookingId}</p>
+                    <button class="ok">Done</button>
+                    `
+                    pop.appendChild(div);
+                    console.log(div);
+                }, 2000);
 
-            } else if(a === "china2") {
+            } else if (a === "china2") {
+                setTimeout(() => {
+                    let div = document.createElement("div");
+                    div.innerHTML = `
+                    <img src="./imgs/c1.jpg" class="bb1">
+                    <p>Congrasulations Your Order is Done</p>
+                    <p>${bookingId}</p>
+                    <button class="ok">Done</button>
+                    `
+                    pop.appendChild(div);
+                    console.log(div);
+                }, 2000);
 
             } else {
+                setTimeout(() => {
+                    let div = document.createElement("div");
+                    div.innerHTML = `
+                    <img src="./imgs/cc3.jpg" class="bb1">
+                    <p>Congrasulations Your Order is Done</p>
+                    <p>${bookingId}</p>
+                    <button class="ok">Done</button>
+                    `
+                    pop.appendChild(div);
+                    console.log(div);
+                }, 2000);
 
             }
         }
