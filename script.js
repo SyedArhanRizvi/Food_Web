@@ -102,43 +102,69 @@ orderNow.forEach((btn) => {
         let bookingId = "#" + rendomCode;
         if (a === "brgr1" || a === "brgr2" || a === "brgr3") {
             if (a === "brgr1") {
+
                 setTimeout(() => {
                     let div = document.createElement("div");
                     div.innerHTML = `
-                <img src='./imgs/b2.png' class="bb1">
+                        <img src='./imgs/b2.png' class="bb1">
+                        <p>Congratulations Your Order is Done</p>
+                        <p>${bookingId}</p>
+                        <button class="ok">Done</button>
+                    `;
+                    // pop.style.display = "flex";
+                    pop.appendChild(div);
+                    console.log(div);
+                
+                    let okBtn = document.querySelector(".ok");
+                    console.log(okBtn);
+                
+                    // Optional: add an event listener to the button if needed
+                    okBtn.addEventListener('click', () => {
+                        pop.removeChild(div);
+                    });
+                }, 2000);
+            } else if (a === "brgr2") {
+                setTimeout(() => {
+                    let div = document.createElement("div");
+                    div.innerHTML = `
+                <img src="./imgs/b4.png" class="bb1">
+                <p>Congrasulations Your Order is Done</p>
+                <p>${bookingId}</p>
+                <button class="ok">Done</button>
+                `;
+                    pop.appendChild(div);
+                    console.log(div);
+
+                    let okBtn = document.querySelector(".ok");
+                    console.log(okBtn);
+                
+                    // Optional: add an event listener to the button if needed
+                    okBtn.addEventListener('click', () => {
+                        pop.removeChild(div);
+                    });
+                })
+
+            } else {
+                setTimeout(() => {
+                    let div = document.createElement("div");
+                    div.innerHTML = `
+                <img src="./imgs/b5.png" class="bb1">
                 <p>Congrasulations Your Order is Done</p>
                 <p>${bookingId}</p>
                 <button class="ok">Done</button>
                 `
                     pop.appendChild(div);
                     console.log(div);
-                }, 2000)
 
-
-            } else if (a === "brgr2") {
-                setTimeout(()=>{
-                     let div = document.createElement("div");
-                div.innerHTML = `
-                <img src="./imgs/b4.png" class="bb1">
-                <p>${bookingId}</p>
-                `
-                pop.appendChild(div);
-                console.log(div);
-                })
-               
-            } else {
-                setTimeout(()=>{
-                    let div = document.createElement("div");
-                div.innerHTML = `
-                <img src="./imgs/b5.png" class="bb1">
-                <p>Congrasulations Your Order is Done</p>
-                <p>${bookingId}</p>
-                <button class="ok">Done</button>
-                `
-                pop.appendChild(div);
-                console.log(div);
-                })
+                    let okBtn = document.querySelector(".ok");
+                    console.log(okBtn);
                 
+                    // Optional: add an event listener to the button if needed
+                    okBtn.addEventListener('click', () => {
+                        pop.removeChild(div);
+                    });
+                })
+
             }
         } else if (a === "pizza1" || a === "pizza2" || a === "pizza3") {
             if (a === "pizza1") {
@@ -152,6 +178,14 @@ orderNow.forEach((btn) => {
                     `
                     pop.appendChild(div);
                     console.log(div);
+
+                    let okBtn = document.querySelector(".ok");
+                    console.log(okBtn);
+                
+                    // Optional: add an event listener to the button if needed
+                    okBtn.addEventListener('click', () => {
+                        pop.removeChild(div);
+                    });
                 }, 2000);
 
             } else if (a === "pizza2") {
@@ -165,6 +199,14 @@ orderNow.forEach((btn) => {
                     `
                     pop.appendChild(div);
                     console.log(div);
+
+                    let okBtn = document.querySelector(".ok");
+                    console.log(okBtn);
+                
+                    // Optional: add an event listener to the button if needed
+                    okBtn.addEventListener('click', () => {
+                        pop.removeChild(div);
+                    });
                 }, 2000);
 
             } else {
@@ -178,24 +220,19 @@ orderNow.forEach((btn) => {
                     `
                     pop.appendChild(div);
                     console.log(div);
+
+                    let okBtn = document.querySelector(".ok");
+                    console.log(okBtn);
+                
+                    // Optional: add an event listener to the button if needed
+                    okBtn.addEventListener('click', () => {
+                        pop.removeChild(div);
+                    });
                 }, 2000);
 
             }
         } else if (a === "ice1" || a === "ice2" || a === "ice3") {
             if (a === "ice1") {
-                setTimeout(() => {
-                    let div = document.createElement("div");
-                    div.innerHTML = `
-                    <img src="./imgs/i2.jpg" class="bb1">
-                    <p>Congrasulations Your Order is Done</p>
-                    <p>${bookingId}</p>
-                    <button class="ok">Done</button>
-                    `
-                    pop.appendChild(div);
-                    console.log(div);
-                }, 2000);
-
-            } else if (a === "ice2") {
                 setTimeout(() => {
                     let div = document.createElement("div");
                     div.innerHTML = `
@@ -206,6 +243,35 @@ orderNow.forEach((btn) => {
                     `
                     pop.appendChild(div);
                     console.log(div);
+
+                    let okBtn = document.querySelector(".ok");
+                    console.log(okBtn);
+                
+                    // Optional: add an event listener to the button if needed
+                    okBtn.addEventListener('click', () => {
+                        pop.removeChild(div);
+                    });
+                }, 2000);
+
+            } else if (a === "ice2") {
+                setTimeout(() => {
+                    let div = document.createElement("div");
+                    div.innerHTML = `
+                    <img src="./imgs/i4.jpg" class="bb1">
+                    <p>Congrasulations Your Order is Done</p>
+                    <p>${bookingId}</p>
+                    <button class="ok">Done</button>
+                    `
+                    pop.appendChild(div);
+                    console.log(div);
+
+                    let okBtn = document.querySelector(".ok");
+                    console.log(okBtn);
+                
+                    // Optional: add an event listener to the button if needed
+                    okBtn.addEventListener('click', () => {
+                        pop.removeChild(div);
+                    });
                 }, 2000);
 
             } else {
@@ -219,6 +285,14 @@ orderNow.forEach((btn) => {
                     `
                     pop.appendChild(div);
                     console.log(div);
+
+                    let okBtn = document.querySelector(".ok");
+                    console.log(okBtn);
+                
+                    // Optional: add an event listener to the button if needed
+                    okBtn.addEventListener('click', () => {
+                        pop.removeChild(div);
+                    });
                 }, 2000);
 
             }
@@ -234,6 +308,14 @@ orderNow.forEach((btn) => {
                     `
                     pop.appendChild(div);
                     console.log(div);
+
+                    let okBtn = document.querySelector(".ok");
+                    console.log(okBtn);
+                
+                    // Optional: add an event listener to the button if needed
+                    okBtn.addEventListener('click', () => {
+                        pop.removeChild(div);
+                    });
                 }, 2000);
 
             } else if (a === "cold2") {
@@ -247,6 +329,14 @@ orderNow.forEach((btn) => {
                     `
                     pop.appendChild(div);
                     console.log(div);
+
+                    let okBtn = document.querySelector(".ok");
+                    console.log(okBtn);
+                
+                    // Optional: add an event listener to the button if needed
+                    okBtn.addEventListener('click', () => {
+                        pop.removeChild(div);
+                    });
                 }, 2000);
 
             } else {
@@ -260,6 +350,14 @@ orderNow.forEach((btn) => {
                     `
                     pop.appendChild(div);
                     console.log(div);
+
+                    let okBtn = document.querySelector(".ok");
+                    console.log(okBtn);
+                
+                    // Optional: add an event listener to the button if needed
+                    okBtn.addEventListener('click', () => {
+                        pop.removeChild(div);
+                    });
                 }, 2000);
 
             }
@@ -275,6 +373,14 @@ orderNow.forEach((btn) => {
                     `
                     pop.appendChild(div);
                     console.log(div);
+
+                    let okBtn = document.querySelector(".ok");
+                    console.log(okBtn);
+                
+                    // Optional: add an event listener to the button if needed
+                    okBtn.addEventListener('click', () => {
+                        pop.removeChild(div);
+                    });
                 }, 2000);
 
             } else if (a === "china2") {
@@ -288,6 +394,14 @@ orderNow.forEach((btn) => {
                     `
                     pop.appendChild(div);
                     console.log(div);
+
+                    let okBtn = document.querySelector(".ok");
+                    console.log(okBtn);
+                
+                    // Optional: add an event listener to the button if needed
+                    okBtn.addEventListener('click', () => {
+                        pop.removeChild(div);
+                    });
                 }, 2000);
 
             } else {
@@ -301,6 +415,14 @@ orderNow.forEach((btn) => {
                     `
                     pop.appendChild(div);
                     console.log(div);
+
+                    let okBtn = document.querySelector(".ok");
+                    console.log(okBtn);
+                
+                    // Optional: add an event listener to the button if needed
+                    okBtn.addEventListener('click', () => {
+                        pop.removeChild(div);
+                    });
                 }, 2000);
 
             }

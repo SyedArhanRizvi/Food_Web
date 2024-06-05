@@ -118,6 +118,9 @@ nav .cart .reservation{
     border: none;
     margin-top: 20px;
 }
+.hero .title .ordernow a{
+    color: white;
+}
 .section2{
     display: flex;
     flex-wrap: wrap;
